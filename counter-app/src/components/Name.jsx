@@ -1,14 +1,14 @@
 import React from 'react';
 
-class Name extends React.Component{
+const component =()=>{
+    const nombre = "Luz";
+    const apellido = "Santiago";
 
-    render(){
-        return (
-            <div>
-                <h1> Luz Santiago</h1>
-            </div>
-        );
-    }
+    return(
+        <div>
+            <h1>{nombre} {apellido} </h1>
+        </div>
+    )
 }
 
-export default Name;
+export default component;
