@@ -1,6 +1,6 @@
 import React from 'react';
 
-const component =()=>{
+const name =()=>{
     const nombre = "Luz";
     const apellido = "Santiago";
 
@@ -11,4 +11,4 @@ const component =()=>{
     )
 }
 
-export default component;
+export default name;
