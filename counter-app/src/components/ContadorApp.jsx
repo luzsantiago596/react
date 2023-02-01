@@ -1,17 +1,25 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-function contador(props){
+function ContadorApp(props){
+
+    const { value } = props; 
+
+    const imprimeValor = () => {
+        console.log(value);
+    }
+
     return(
         <div> 
             <h1>CounterApp</h1>
-            <h1>{ props.value }</h1>    
+            <h2>{ value }</h2>    
+            <button onClick={ imprimeValor }>Mostrar Valor</button>
         </div>
     )
 
 }
 
-contador.PropTypes ={
-    value: PropTypes.number
+ContadorApp.propTypes ={
+    value: PropTypes.number.isRequired
 }
-export default contador;
+export default ContadorApp;
